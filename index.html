@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+    <title> Exoplanet Units Converter</title>
+     <h1> Exoplanet Units Converter </h1>
+    </head>
+    
+    <link rel="stylesheet" type = "text/css" href="quiz.css">
+    
+    <body>
+
+
+      <div class="grid-container" id="questionarray">
+
+	<p class="grid-item"  id="typequestion">Select Unit Type </p>
+	<p class="grid-item" id="unitquestion" style="visibility:hidden">Select Unit </p>
+	<p class="grid-item" id="valuequestion" style="visibility:hidden">Enter Value </p>
+	
+	<h2 class="grid-item" id="resultheader" style="visibility:hidden"> Results </h2>
+
+	
+
+	<div class="grid-item" id="typebox"> </div>
+	<div class="grid-item" id="unitbox"> </div>
+	<div class="grid-item" id="valuebox"> </div>
+
+	<div class="grid-item" id="results"> </div>
+
+	
+	<button id="submitType" onclick="getUnitList()"> Select Type </button>
+	<button id="submitUnit" onclick="getUnit()" style="visibility:hidden"> Select Unit </button>
+	<button id="submitValue" onclick="doConversion()"  style="visibility:hidden"> Do Conversion </button>
+
+      </div>
+    
+      <p id="confirm"> </p>
+    
+      <div id = "spaces">
+	<br>
+	<br>
+      </div>
+
+      <p id="explainbox"> </p>  
+
+
+<!--Javascript stuff -->
+
+<script src='quiz.js'> </script>
+
+</body>
