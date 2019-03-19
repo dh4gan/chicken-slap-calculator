@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <html>
     <head>
-    <title> Exoplanet Units Converter</title>
-     <h1> Exoplanet Units Converter </h1>
+    <title>Chicken Slap Heating Calculator</title>
+     <h1>Chicken Slap Heating Calculator</h1>
     </head>
     
     <link rel="stylesheet" type = "text/css" href="quiz.css">
@@ -13,36 +13,36 @@
 
       <div class="grid-container" id="questionarray">
 
-	<p class="grid-item"  id="typequestion">Select Unit Type </p>
-	<p class="grid-item" id="unitquestion" style="visibility:hidden">Select Unit </p>
-	<p class="grid-item" id="valuequestion" style="visibility:hidden">Enter Value </p>
+	<p class="grid-item" id="slapratequestion"> Enter a Slapping Rate (slaps/second) </p> 
+	<input type = "text" id = "slapratebox" value = "1.0" />
 	
-	<h2 class="grid-item" id="resultheader" style="visibility:hidden"> Results </h2>
-
+	<p class="grid-item"  id="transferquestion"> Enter Slap Heat Transfer Efficiency (%) </p>
+	<input type = "text" id = "transferbox" value = "10.0" />
 	
-
-	<div class="grid-item" id="typebox"> </div>
-	<div class="grid-item" id="unitbox"> </div>
-	<div class="grid-item" id="valuebox"> </div>
-
-	<div class="grid-item" id="results"> </div>
-
+	<p class="grid-item" id="handmassquestion"> Enter Mass of Hand in kg</p>
+	<input type = "text" id = "handmassbox" value = "0.5" />
 	
-	<button id="submitType" onclick="getUnitList()"> Select Type </button>
-	<button id="submitUnit" onclick="getUnit()" style="visibility:hidden"> Select Unit </button>
-	<button id="submitValue" onclick="doConversion()"  style="visibility:hidden"> Do Conversion </button>
+	<p class="grid-item" id="handvelocityquestion"> Enter Velocity of hand in metres per second </p>
+	<input type = "text" id = "handvelocitybox" value = "10.0" />
+	
+	<p class="grid-item" id="areaquestion"> Enter Surface Area of Chicken (in metres squared)</p>
+	<input type = "text" id = "areabox" value = "0.5" />
 
+	<p class="grid-item" id="backgroundtemperature"> Enter Background Temperature (in &#176 C) </p>
+	<input type = "text" id = "backgroundtemperaturebox" value = "20" />
+
+
+	<!-- Chicken Surface Area: http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-69162011000300007 -->
+
+	<p class = "grid-item" id="empty"> </p>
+	<button id="EquilibriumButton" onclick="calcEquilibriumTemperature()"> Get Equilibrium Temperature </button>
+
+	<p class = "grid-item" id="temperatureanswer"> Equilibrium Temperature </p>
+	<p id="temperaturebox" style="color:red"> </p>
       </div>
-    
-      <p id="confirm"> </p>
-    
-      <div id = "spaces">
-	<br>
-	<br>
-      </div>
 
-      <p id="explainbox"> </p>  
-
+      
+      
 
 <!--Javascript stuff -->
 
